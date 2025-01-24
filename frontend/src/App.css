@@ -1,0 +1,74 @@
+@import url(./index.css);
+
+/* -------------------------------
+   Navbar
+   ------------------------------- */
+
+.navbar {
+    padding: .5rem 0;
+}
+
+.navbar-toggler {
+    font-size: 2rem;
+    padding: .5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-brand {
+    font-family: "Playball", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    text-shadow: 0px 0px 1px var(--dark-gray)
+}
+
+.navbar-brand:hover {
+    text-shadow: 0px 0px 1px var(--beige);
+}
+
+.offcanvas-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.sidebar {
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.CTA-icon,
+.nav-link {
+    font-size: 3rem;
+    text-shadow: 0 0 1px var(--beige);
+}
+
+.nav-link {
+    padding: 0 2rem !important;
+}
+
+.nav-link:hover {
+    text-shadow: 0 0 1px var(--dark-gray);
+}
+
+.CTA-group {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+/* -------------------------------
+   Responsive
+   ------------------------------- */
+
+@media (max-width: 768px) {
+    #offcanvasNavbar-expand-md {
+        max-width: 35vw;
+    }
+}
