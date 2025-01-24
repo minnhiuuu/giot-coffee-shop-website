@@ -1,0 +1,77 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+.bower_components/
+
+# Build outputs
+dist/
+dist-ssr/
+out/
+build/
+.esm-cache/
+.cache/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.sw?
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.test
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# System files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Testing
+coverage/
+*.lcov
+
+# Debugging
+debug.log
+stacktrace.log
+
+# Compiled files
+*.dll
+*.exe
+*.pyc
+*.pyo
+
+# TypeScript
+*.tsbuildinfo
+
+# Next.js
+.next/
+.vercel/
+
+# React Native
+android/
+ios/
+*.xcworkspace
+
+# Misc
+CauTrucThuMuc.txt
