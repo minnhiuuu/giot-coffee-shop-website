@@ -1,0 +1,101 @@
+@import url(../../index.css);
+
+/* HomePage */
+#HomePage {
+    padding-top: .5rem;
+}
+
+/* Carousel */
+.carousel,
+.carousel-item {
+    height: 50vh;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Best Sales */
+.heading {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 4rem;
+    text-shadow: var(--text-shadow);
+}
+
+/* Best Sales List */
+.best-sales-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.best-sales-item .item-image {
+    width: 15rem;
+    height: 15rem;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.best-sales-item .card-title {
+    font-size: 2rem;
+    /* Chống tràn chữ */
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.best-sales-item .card-text {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    /* Chống tràn chữ */
+    max-width: 100%;
+    max-height: 4rem;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.best-sales-item button {
+    padding: .5rem 1rem;
+    width: 15rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px dashed var(--dark-gray);
+}
+
+.best-sales-item button:hover {
+    border: 1px dashed var(--dark-gray);
+}
+
+.best-sales-item .cart-icon {
+    font-size: 2rem;
+}
+
+.best-sales-item button span {
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .best-sales-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .carousel,
+    .carousel-item {
+        height: 35vh;
+    }
+
+    .best-sales-list {
+        grid-template-columns: 1fr;
+    }
+}

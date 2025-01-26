@@ -3,6 +3,10 @@
 :root {
     --beige: #f5f5f5;
     --dark-gray: #333333;
+    --text-shadow: 1px 1px 2px var(--dark-gray),
+        1px 1px 1px var(--beige),
+        1px 1px 1px var(--dark-gray),
+        1px 1px 1px var(--beige);
 }
 
 /* --------------------------
@@ -22,6 +26,7 @@
 html {
     font-size: 62.5%;
     /* 1rem = 10px */
+    scrollbar-width: none;
 }
 
 html,
@@ -30,25 +35,6 @@ body {
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     overflow-y: scroll;
-}
-
-/* --------------------------
-   Scrollbar Styles
-   -------------------------- */
-
-::-webkit-scrollbar {
-    width: .8rem;
-    /* 8px */
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--dark-gray);
-    border-radius: .4rem;
-}
-
-::-webkit-scrollbar-track {
-    background-color: var(--beige);
-    border-radius: .4rem;
 }
 
 /* --------------------------
@@ -65,6 +51,11 @@ body {
     /* 16px */
     color: var(--dark-gray);
     background-color: var(--beige);
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 /* --------------------------

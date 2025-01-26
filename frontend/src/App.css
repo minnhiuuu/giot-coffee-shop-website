@@ -45,7 +45,7 @@
 
 .CTA-icon,
 .nav-link {
-    font-size: 3rem;
+    font-size: 2rem;
     text-shadow: 0 0 1px var(--beige);
 }
 
@@ -70,5 +70,9 @@
 @media (max-width: 768px) {
     #offcanvasNavbar-expand-md {
         max-width: 35vw;
+    }
+
+    .CTA-group {
+        gap: 1rem;
     }
 }
